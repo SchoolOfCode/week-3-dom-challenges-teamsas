@@ -13,3 +13,11 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+addEventListener("change", function (e) {
+  let userColor = e.target.value;
+
+  let canvas = document.querySelector(".canvas");
+
+  canvas.style.backgroundColor = userColor;
+});

@@ -13,3 +13,26 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// Ensures we start at 1
+/* let userInput = document.getElementById("starSlider");
+
+console.log(userInput.value); */
+
+function createStar(number) {
+  let targetDiv = document.getElementById("stars");
+
+  targetDiv.innerHTML = "";
+
+  for (let i = 0; i < number; i++) {
+    let newStar = document.createElement("span");
+    newStar.classList.add("star-icon");
+    newStar.textContent = "★";
+    targetDiv.appendChild(newStar);
+  }
+}
+
+addEventListener("change", (e) => {
+  let slider = e.target.value;
+  createStar(slider);
+});
