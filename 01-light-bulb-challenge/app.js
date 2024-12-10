@@ -14,3 +14,20 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+
+const onButton = document.getElementById("turnBulbOn")
+const img = document.getElementById("lightbulb");
+function turnLightOn() {
+  img.src = "light-bulb-on.png"
+}
+
+onButton.addEventListener("click", turnLightOn);
+
+const offButton = document.getElementById("turnBulbOff");
+
+function turnLightOff() {
+  img.src = "light-bulb-off.png"
+}
+
+offButton.addEventListener("click", turnLightOff);
